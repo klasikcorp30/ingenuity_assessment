@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ingenuity</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+            <h1 class="text-center">Ingenuity</h1>
+            <p class="text-center">Welcome to the project creation platform</p>
+            <form action="php/submit.php" method="post" class="text-center border border-dark p-5">
+                <div class="form-group">
+                    
+                   <select id="staff" name="staff" class="form-control w-25" required>
+                    <option value="0"> Select a staff member</option>
+
+                </select> 
+                </div>
+                <legend> Project Lists</legend>
+                <div class="form-group" id="lstOfProjects">
+                </div>
+                <div class="form-group">
+                    <input type="date" name="deadline" class="form-control w-25 mb-3" required>
+                </div>
+                <button type="submit" class="btn btn-outline-primary w-25"> Create</button>
+            </form>
+    </div> 
+</body>
+<script src="assets/jquery-3.3.1.min.js"></script>
+<script src="api.js"></script>
+</html>
